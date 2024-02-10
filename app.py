@@ -16,7 +16,7 @@ def convert_image_to_stitches(image):
 
     
     grayscale_array = np.array(grayscale_image)
-
+ 
     
     binary_image = (grayscale_array < 128).astype(np.uint8)
 
@@ -68,4 +68,4 @@ def convert_to_dst():
     return send_file(dst_file_path, as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8001)
