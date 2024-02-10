@@ -66,6 +66,3 @@ def convert_to_dst():
 
     # Return the DST file as a downloadable attachment
     return send_file(dst_file_path, as_attachment=True)
-
-if __name__ == '__main__':
-    app.run(debug=True, port=8001)
