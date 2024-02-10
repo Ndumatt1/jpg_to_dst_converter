@@ -4,8 +4,11 @@ import numpy as np
 from scipy import ndimage
 import pyembroidery
 import os
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 
 def convert_image_to_stitches(image):
 
